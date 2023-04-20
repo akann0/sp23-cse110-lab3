@@ -1,0 +1,203 @@
+/* universal selector */
+* {
+    color: green;
+    background-color: rgb(242, 255, 129);
+}
+
+header {
+    text-align: center;
+}
+
+#datebox{
+    height: 1vh;
+}
+
+.vidaud {
+    text-align: center;
+}
+
+/* block of text that says "Pied Piper Meeting Minutes" */
+strong {
+    color: #000000;
+}
+
+/* The link, when hovered */
+a:hover {
+    color:hsl(183, 90%, 49%);
+}
+
+/* block of text that says "Richard"
+#Richard {
+    color: rgb(33, 22, 193);
+}
+*/
+em {
+    display: none;
+}
+
+i {
+    color: black;
+    display: block;
+}
+
+/* block of text that says "Todays Agenda" */
+h1 {
+    color: maroon;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    #agenda{
+        margin: 20px 20px 0px 20px;
+        padding-top: 1mm;
+    }
+};
+
+
+
+#attendance{
+    align-self: flex-start;
+
+
+}
+
+div {
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkred;
+    border-radius: 40px;
+    padding-inline: 30px;
+    min-width: 2in;
+    max-width: 5in;
+    
+}
+
+
+#employees{
+    order: 3;
+    align-self: flex-start;
+}
+
+.out {
+    margin: 20px 20px 0px 20px;
+    padding-top: 1mm;
+
+}
+
+
+/* Video of Meeting */
+video {
+    width: 50vw;
+    border-width: 0.5pc;
+    border-style: solid;
+    border-color: green;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Picture of Silicon Valley Logo
+    width: 30vw;
+    position: relative;
+    left: 60vw;
+    top: -5vw; */
+img {
+
+
+    width: 30vw;
+    grid-area: "side";
+}
+
+#line1{
+    grid-area: "header";
+    margin-top: 8mm;
+}
+
+#line2{
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: underline;
+    grid-area: "main";
+    position: relative;
+    left: -4vh;
+}
+
+#line3{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/* Link Headers */
+.or {
+    color: darkred;
+    margin:auto;
+    padding-top: 5mm;
+}
+
+form input {
+    background-color: whitesmoke;
+}
+
+
+
+/*Three Bottom-Most Buttons*/
+.butt, select{
+    background-color: whitesmoke;
+}
+
+/* Any form */
+[method="get"]:active {
+    background-color: rgb(38, 255, 0);
+}
+
+.block {
+    display: grid;
+
+    grid-template-columns: 500px 50px;
+    grid-template-rows: 90px 25px 40px;
+
+    grid-template-areas: 
+        "header side"
+        "main ."
+        "f .";
+
+} 
+
+/* This Dropdown Select One */
+fieldset {
+    max-width: 4cm;
+}
+
+select > option {
+    background-color: whitesmoke;
+}
+
+details + p {
+    color: darkred;
+}
+
+
+fieldset ~ button {
+    margin-top: -25px;
+    width: 10mm;
+    margin-left: 138px;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+

@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share Tech Mono">
+<style>
+    strong {
+      font-family: 'Share Tech Mono', serif;
+      font-size: 48px;
+      letter-spacing: 0.001em;
+    }
+  </style>
 <html lang="en">
   <head>
     <title>Pied Piper Meeting Minutes</title>
@@ -7,40 +15,40 @@
   </head>
   <body>
     <header>
+        <link rel="stylesheet" href="mystyle.css">
         <h2><strong>Pied Piper Founders Meeting</strong></h2>
-        <span><i>Brainstorm</i></span>
-        <h3><b> Date: 04/06/2014 </b></h3>
-    </header>
-    
-    <main>
         <nav>
             <a href="https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">In Case You Don't Get the Bit</a>
-            <br>
-            <img src="images/titlescreen.jpeg" alt="No Image"> 
         </nav>
+        <h3 id="datebox"><b> Date: 04/06/2014 </b></h3>
+    </header>
+    <hr>
+    <main>
 
-        <div>
-        <p>
-            Attendance List:
+        <div id="attendance" class = "out">
+            <h3 class="outheader">Attendance List:</h3>
         <ol>
-            <li> Richard Hendricks <em>CEO</em></li>
-            <li> Erlich Bachmann <i>Incubator Head</i></li>
+            <li id="Richard"> Richard Hendricks <i>CEO</i></li>
+            <li> Erlich Bachmann <em>Incubator Head</em></li>
             <li> Peter </li>
             <li> Monica</li>
         </ol>
+        </div>
             
-        Employees of Pied Piper
+
+        <div id="employees" class="out">
+            <h3 class="outheader">Employees of Pied Piper:</h3>
         <ul>
-            <li> Richard Hendricks <em>CEO</em></li>
+            <li> Richard Hendricks <i>CEO</i></li>
             <li> Jared <i>CFO</i></li>
-            <li> Erlich Bachmann <i>Incubator Head</i></li>
+            <li> Erlich Bachmann <em>Incubator Head</em></li>
             <li> Bighead </li>
             <li> Danesh </li>
             <li> Gilfoyle</li>
         </ul>
-        
         </div>
-
+        
+        <div id="agenda">
         <section>
             <h1> Today's Agenda:</h1>
 
@@ -54,41 +62,52 @@
 
 
         </section>
+        </div>
 
 
     </main>
 
     <footer>
+        <section class="vidaud">
         <hr>
-        Video Footage
+        <p class="vidaud">Video Footage:</p>
+
         <video controls>
             <source src="images/video1142936598.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <br>
 
 
-        Audio Recording:
+        <p class="vidaud">Audio Recording:</p>
         <audio controls>
             <source src="images/audio1142936598.m4a" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
+        
+        </section>
     
         <hr>
 
-        <h2>Here are some links to the Silicon Valley Wiki</h2> 
+        <section class="block">
+            <h2 id="line1">Here are some links to the Silicon Valley Wiki</h2>
+            <img src="images/titlescreen.jpeg" alt="No Image"> 
+        
 
-        <span>Search the Wiki Here:</span>
-        <form action="https://silicon-valley.fandom.com/wiki/Special:Search" method="get">
-            <label>Silicon Valley Wiki: <input type="search" name="query"></label> <input type="submit" value="Search...">
+        <span id="line2">Search the Wiki Here:</span>
+        <form action="https://silicon-valley.fandom.com/wiki/Special:Search" method="get" id="line3">
+            <label><input type="search" name="query"></label> <input type="submit" value="Search...">
         </form>
 
-        <span>Or, search the wiki here</span>
+        </section>
+
+        <h3 class="or">Or, search the wiki here</h3>
         
         <form action="https://silicon-valley.fandom.com/wiki/Special:Search" method="get">
-        <p><label> Search Here: <textarea></textarea></label></p>
+        <p><label> Search Here: <textarea style="background-color:white;"></textarea></label></p>
         </form>
 
-        <span>Or, pick a character from this dropdown:</span>
+        <h3 class="or">Or, pick a character from this dropdown:</h3>
         <form action="https://silicon-valley.fandom.com/wiki" method="get">
             <fieldset>
                 <legend> Character Select </legend>
@@ -101,7 +120,7 @@
         </form>
 
 
-        <h3>Or, pick a character from this dropdown:</h3>
+        <h3 class="or">Or, pick a character from this dropdown:</h3>
         <form action="https://silicon-valley.fandom.com/wiki" method="get">
             <label for="browser">Choose your character:</label>
             <input list="browsers" name="browser" id="browser">
@@ -113,12 +132,12 @@
             </datalist>
     
 
-            <button>Go</button>
+            <button class="butt">Go</button>
         </form>
 
 
-        <h3>Or, pick a character from this selection:</h3>
-        <form action="https://silicon-valley.fandom.com/wiki" method="get">
+        <h3 class="or">Or, pick a character from this selection:</h3>
+        <form id="selection" action="https://silicon-valley.fandom.com/wiki" method="get">
             <p>
                 <label for="unittype">Select character:</label>
                 <select id="unittype" name="unittype">
@@ -128,7 +147,7 @@
                 </select>
                </p>
 
-               <button>Go</button>
+               <button class="butt">Go</button>
         </form>
 
 
@@ -136,14 +155,14 @@
 
 
 
-        <span>Or, dont do that, and click the button to see my favorite characters wiki</span>
+        <h3 class="or">Or, dont do that, and click the button to see my favorite characters wiki</h3>
         <form action="https://silicon-valley.fandom.com/wiki/J%C3%ACan-Y%C3%A1ng" method="get">
             <p><label> <input type=checkbox name=wiki value=Bertram_Gilfoyle> This might make the button not work </label></p>
 
             <p><label> <input type=date name=wiki> This might make the button not work </label></p>
 
 
-            <button>Go</button>
+            <button class="butt">Go</button>
         </form>
 
 
